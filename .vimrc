@@ -207,3 +207,7 @@ set virtualedit+=block
 
 " diffで-------を表示しない
 ":set diffopt-=filler
+"
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
