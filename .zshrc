@@ -50,6 +50,13 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 
+# 履歴をインクリメンタルに追加
+ setopt inc_append_history
+ 
+# インクリメンタルからの検索
+bindkey "^R" history-incremental-search-backward
+bindkey "^S" history-incremental-search-forward
+
 # すべてのヒストリを表示する
 function history-all { history -E 1 }
 
