@@ -14,14 +14,16 @@ NeoBundle 'git://github.com/Shougo/unite.vim.git'
 NeoBundle 'git://github.com/Shougo/vimshell.git'
 NeoBundle 'git://github.com/Shougo/vimproc.git'
 NeoBundle 'git://github.com/vim-scripts/taglist.vim.git'
-NeoBundle 'git://github.com/Lokaltog/vim-powerline.git'
+"NeoBundle 'git://github.com/Lokaltog/vim-powerline.git'
 "NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'git://github.com/vim-scripts/TwitVim.git'
 NeoBundle 'git://github.com/thinca/vim-quickrun.git'
 NeoBundle 'derekwyatt/vim-scala'
 "NeoBundle 'kakkyz81/evervim'
-NeoBundle 'github: https://github.com/tpope/vim-fugitive'
- 
+"NeoBundle 'github: https://github.com/tpope/vim-fugitive'
+NeoBundle 'alpaca-tc/alpaca_powertabline'
+NeoBundle 'https://github.com/Lokaltog/powerline.git'
+
 filetype plugin on
 filetype indent on
 

@@ -132,6 +132,8 @@ alias v=vim
 brew_prefix=`brew --prefix`
 alias date="$brew_prefix/bin/gdate"
 
+java_version=1.6
+export JAVA_HOME=`/usr/libexec/java_home -v $java_version `
 export ANT_OPTS="-Xmx4096m -Dfile.encoding=UTF-8"
 export DEFAULT_JVM_OPTS=-Dfile.encoding=UTF-8
 
@@ -148,6 +150,8 @@ export PATH=$PATH:~/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init - zsh)"
 
+# docker host
+export DOCKER_HOST=tcp://localhost
 
 
 # export HADOOP_OPTS=-server
