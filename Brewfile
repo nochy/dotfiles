@@ -9,7 +9,7 @@ tap homebrew/versions || true
 tap homebrew/dupes || true
 
 #-------
-install brew-cask || true
+install brew-cask
 install rbenv ruby-build
 install readline
 install openssl
@@ -32,6 +32,10 @@ install memcached
 install fontforge
 install docker
 install boot2docker
+install coreutils --default-names
+install lzo
+install lzop
+install redis
 
 #-------
 cask install google-chrome
@@ -52,6 +56,10 @@ cask install sourcetree
 cask install firefox
 cask install google-japanese-ime
 cask install thunderbird
+cask install trailer
+cask install google-drive
+cask install mou
+cask install fluid
 #-------
 cask alfred link
 

@@ -158,7 +158,7 @@ export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init - zsh)"
 
 # docker host
-export DOCKER_HOST=tcp://localhost
+export DOCKER_HOST=tcp://localhost:4243
 
 
 # export HADOOP_OPTS=-server

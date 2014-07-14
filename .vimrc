@@ -23,6 +23,9 @@ NeoBundle 'derekwyatt/vim-scala'
 "NeoBundle 'github: https://github.com/tpope/vim-fugitive'
 NeoBundle 'alpaca-tc/alpaca_powertabline'
 NeoBundle 'https://github.com/Lokaltog/powerline.git'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
 
 filetype plugin on
 filetype indent on
@@ -127,7 +130,7 @@ set softtabstop=0
 
 
 " tabをスペースに置換する
-"set expandtab
+set expandtab
 
 "自動的にインデントする
 "set autoindent
@@ -212,4 +215,18 @@ set virtualedit+=block
 "
 set list
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
+nmap gW <Plug>(openbrowser-open)
+
+" markdown 設定
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:previm_open_cmd = ''
+nnoremap [previm] <Nop>
+nmap <Space>p [previm]
+nnoremap <silent> [previm]o :<C-u>PrevimOpen<CR>
+nnoremap <silent> [previm]r :call previm#refresh()<CR>
+let g:quickrun_config = {}
+let g:quickrun_config['markdown'] = {
+      \   'outputter': 'browser'
+      \ }
 
