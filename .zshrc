@@ -158,8 +158,12 @@ export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init - zsh)"
 
 # docker host
-export DOCKER_HOST=tcp://localhost:4243
+export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
 
-
+# golang
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/.go:$HOME/repos/other/golang
+export PATH=$PATH:${GOPATH//://bin:}/bin
+    
 # export HADOOP_OPTS=-server
 #export HADOOP_OPTS="-Djava.security.krb5.realm=OX.AC.UK -Djava.security.krb5.kdc=kdc0.ox.ac.uk:kdc1.ox.ac.uk"

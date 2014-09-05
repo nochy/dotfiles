@@ -26,7 +26,7 @@ install reattach-to-user-namespace
 #install imagemagick
 #install mysql
 install apple-gcc42
-install gradle
+#install gradle
 install scala
 install memcached
 install fontforge
@@ -36,6 +36,8 @@ install coreutils --default-names
 install lzo
 install lzop
 install redis
+install go
+install hg
 
 #-------
 cask install google-chrome
